@@ -1,4 +1,5 @@
 import React from 'react'
+import { Card } from '@frosted-ui/core'
 import { TrendingUp, TrendingDown } from 'lucide-react'
 
 interface StatsCardProps {
@@ -22,7 +23,7 @@ export function StatsCard({
   const isNegativeTrend = trend && trend < 0
 
   return (
-    <div className={`p-6 bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-lg shadow-sm ${className}`}>
+    <Card className={`p-6 ${className}`}>
       <div className="flex items-center justify-between mb-4">
         <div className="p-2 bg-blue-50 dark:bg-blue-900/20 rounded-lg">
           {icon}
@@ -48,6 +49,6 @@ export function StatsCard({
           <p className="text-xs text-gray-500 dark:text-gray-500 mt-1">{trendLabel}</p>
         )}
       </div>
-    </div>
+    </Card>
   )
 }
