@@ -1,4 +1,5 @@
 import React from 'react'
+import { Card } from '@frosted-ui/core'
 import { BarChart3, LineChart } from 'lucide-react'
 
 interface ChartCardProps {
@@ -8,14 +9,14 @@ interface ChartCardProps {
   className?: string
 }
 
-export function ChartCard({
-  title,
-  description,
-  children,
-  className = ''
+export function ChartCard({ 
+  title, 
+  description, 
+  children, 
+  className = '' 
 }: ChartCardProps) {
   return (
-    <div className={`p-6 bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-lg shadow-sm ${className}`}>
+    <Card className={`p-6 ${className}`}>
       <div className="flex items-center justify-between mb-6">
         <div>
           <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
@@ -44,6 +45,6 @@ export function ChartCard({
           </div>
         </div>
       )}
-    </div>
+    </Card>
   )
 }
