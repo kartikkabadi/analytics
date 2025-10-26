@@ -1,5 +1,5 @@
 import React from 'react'
-import { Card } from '@frosted-ui/core'
+import { Card } from './Card'
 import { BarChart3, LineChart } from 'lucide-react'
 
 interface ChartCardProps {
