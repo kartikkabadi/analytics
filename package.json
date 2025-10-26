@@ -16,8 +16,7 @@
     "clsx": "^2.0.0",
     "tailwind-merge": "^2.0.0",
     "class-variance-authority": "^0.7.0",
-    "recharts": "^2.8.0",
-    "@frosted-ui/react": "^1.0.0"
+    "recharts": "^2.8.0"
   },
   "devDependencies": {
     "@types/node": "^20.0.0",
