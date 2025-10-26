@@ -1,8 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  experimental: {
-    appDir: true,
-  },
+  // Removed experimental.appDir: Next 14 enables app dir by default and
+  // specifying `appDir` under `experimental` produces a warning.
   images: {
     domains: ['assets.whop.com', 'cdn.whop.com'],
   },
